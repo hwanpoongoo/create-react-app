@@ -3,7 +3,8 @@ import './App.css';
 import './MyComponent';
 import MyComponent from './MyComponent';
 import MyComponent2 from './MyComponent2';
-import StateComponent from './StateComponent'; 
+import StateComponent from './StateComponent';
+import EventComponent from './EventComponent';
 
 const say = 'wow';
 
@@ -35,8 +36,9 @@ function App() {
       <MyComponent2 name2="KJS" favoriteNumber="3">
         children KJS
       </MyComponent2>
-      
-      <StateComponent/>
+
+      <StateComponent />
+      <EventComponent />
     </>
   );
 }
