@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-//왜 안먹히지
+//왜 안먹히지 아하 box --> Box 대소문자 조심하자
 
 const Box = styled.div`
   background: ${(props) => props.color || 'blue'};
@@ -9,7 +9,7 @@ const Box = styled.div`
   display: flex;
 `;
 
-const button = styled.button`
+const Button = styled.button`
   background: white;
   color: black;
   border-radius: 4px;
@@ -44,8 +44,8 @@ const button = styled.button`
 const StyledComponent = () => {
   return (
     <Box color="black">
-      <button>안녕하세요</button>
-      <button inverted="true"> 테두리만 </button>
+      <Button>안녕하세요</Button>
+      <Button inverted="true"> 테두리만 </Button>
     </Box>
   );
 };
