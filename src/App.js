@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './MyComponent';
@@ -5,6 +6,7 @@ import MyComponent from './MyComponent';
 import MyComponent2 from './MyComponent2';
 import StateComponent from './StateComponent';
 import EventComponent from './EventComponent';
+import StyledComponent from './StyledComponent';
 
 const say = 'wow';
 
@@ -33,12 +35,13 @@ function App() {
 
       {/*주석 표시 체크 */}
       <MyComponent name2="KJS">children KJS</MyComponent>
-      <MyComponent2 name2="KJS" favoriteNumber="3">
+      <MyComponent2 name2="KJS" favoriteNumber={3}>
         children KJS
       </MyComponent2>
 
       <StateComponent />
       <EventComponent />
+      <StyledComponent />
     </>
   );
 }
